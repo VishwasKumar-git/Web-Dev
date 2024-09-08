@@ -57,8 +57,47 @@ width:100%;
   
 }
 .line h2{
-    font-size: 6.5vw;
+    font-size: 5vw;
     text-transform: uppercase;
+    opacity: 0;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes anim {
+    0%{
+        font-family: 'palin';
+        -webkit-text-stroke: 1px solid #fff;
+        color: #fff;
+        opacity: 1;
+        font-weight: 500;
+        
+    }
+    47%{
+        font-family: 'palin';
+        -webkit-text-stroke: 1px solid #fff;
+        color: #fff;
+        opacity: 0;
+        font-weight: 500;
+        
+    }
+    
+
+    50%{
+        font-family: 'silk';
+        -webkit-text-stroke: 1px solid #fff;
+        color: transparent;
+        opacity: 1;
+        font-weight: 500;
+    }
+    100%{
+        font-family: 'silk';
+        -webkit-text-stroke: 1px solid #fff;
+        color: transparent;
+        opacity: 0;
+        font-weight: 500;
+    }
 }
 
 #main{

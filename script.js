@@ -23,9 +23,22 @@ tl.from('.line-part1, .line h2', {
         }, 20)
     }
 })
-
+tl.to('.line h2',{
+    animationName:'anim',
+    opacity:0
+})
 tl.to('#loader', {
     opacity: 0,
     duration: 0.4,
     delay:2
+})
+
+tl.from('.page1',{
+    y:1200,
+    opacity:0,
+    ease:Power4
+})
+
+tl.to('#loader',{
+    display:none
 })
